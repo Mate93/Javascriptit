@@ -1,1 +1,139 @@
 
+Tehtävä 1
+
+<script language="JavaScript">
+
+
+  document.write('Tämä on Javascript-ohjelma!');
+
+</script>
+
+tehtävä 2
+<script>
+ let nimi;
+nimi = prompt('Syötä nimesi.');
+document.write("'Terve, '" + nimi+'!');
+</script>
+
+
+tehtävä 3
+<script language="JavaScript">
+
+  var sade = prompt("mikä on ympyrän säde");
+  pintaala = (Math.PI * sade *sade);
+  document.write("Jos ympyrän säde on " + sade + " niin sen pinta-ala on " + pintaala + " cm.");
+
+</script>
+
+tehtävä 4
+<script language="JavaScript">
+
+
+  var kanta = prompt("Anna kulmion kanta");
+  var korkeus = prompt("Anna kulmion korkeus");
+  var kanta1 = prompt("Anna kulmion kanta uudelleen");
+  var korkeus2 = prompt("Anna kulmion korkeus uudelleen");
+
+  pintaala = ((kanta * korkeus) / 2);
+
+
+  document.write(" Pinta-ala on " + pintaala);
+
+  piiri = ((kanta1 + korkeus2 ) * 2);
+  document.write("ja piiri on " + piiri );
+
+
+</script>
+
+tehtävä 5
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-kokeilu</title>
+</head>
+<body>
+<script language="JavaScript">
+
+
+  let luku1, luku2, luku3;
+  luku1 = prompt("Anna eka luku");		//Toimii
+  luku2 = prompt("Anna toka luku");
+  luku3 = prompt("Anna kolmas luku");
+  var summa;
+
+
+
+  summa = +luku1 + +luku2 + +luku3;
+  document.write("Lukujen summa on: " + summa);
+
+
+</script>
+</body>
+</html>
+
+tehtävä 8
+
+<script language="JavaScript">
+
+var summa;
+  var luvut;
+var servi , servi = Math.floor( Math.random() * 6 ) +1;
+alert('arvasit numeron ='  + servi +  "...Heitä toista noppaa");
+
+var diceRoll = Math.floor( Math.random() * 6 ) +1;
+alert('arvasit numeron=' + diceRoll);
+
+
+luvut = document.write("Arvotut luvut olivat:" , + diceRoll + " ja " +servi);
+
+ luvut = (diceRoll)+(servi);
+
+summa= document.write('<br/>')
+  document.write( " eli  yhteensä sait:" + luvut );
+
+
+</script>
+
+tehtävä 9. i
+
+<script language="JavaScript">
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  document.write(getRandomInt(9));
+  document.write("<br />");
+
+
+  document.write(getRandomInt(9));
+  document.write("<br />");
+
+  document.write(getRandomInt(9));
+  document.write("<br />");
+
+
+</script>
+
+tehtävä 9. ii
+
+<script language="JavaScript">
+
+  function randomNumber(minimum, maximum){
+    return Math.round( Math.random() * (maximum - minimum) + minimum);
+  }
+
+  document.write(randomNumber(1,6));
+  document.write("<br />");
+  document.write(randomNumber(1,6));
+  document.write("<br />");
+  document.write(randomNumber(1,6));
+    document.write("<br />");
+  document.write(randomNumber(1,6));
+
+
+</script>
+
+
