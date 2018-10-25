@@ -13,3 +13,19 @@ Tehtävä 1
 
     document.write(kertoma);
 </script>
+
+tehtävä 2
+    if ('Lasketaanko neliöjuuri') neliojuuri();
+
+
+    function neliojuuri()
+    {tulo=prompt('Anna neliöjuuri')}
+
+
+
+   if (tulo= document.write(Math.sqrt(tulo).toFixed(2)));
+
+
+      else if (tulo < 0) ;
+        prompt('Anna luku uudelleen');
+
