@@ -1,0 +1,15 @@
+Tehtävä 1
+
+<script>
+
+     luku = prompt('Anna kokonaisluku');
+
+     kertoma = 1;
+
+    while(luku != 0){
+        kertoma = kertoma * luku;
+        luku = luku - 1;
+    }
+
+    document.write(kertoma);
+</script>
