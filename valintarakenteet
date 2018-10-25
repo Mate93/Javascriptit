@@ -1,0 +1,130 @@
+Tehtävä 1
+
+<script language="JavaScript">
+
+  function kuhanpituus() {
+    a= prompt('mikä on kuhan pituus');
+    if (a > 37) {
+      return a;
+    } else {
+      tulo = (37) -+ (a);
+      return "Laske kuha takaisin järveen sinulta puuttuu vielä = " + tulo + 'cm';
+    }
+  }
+
+  document.write(kuhanpituus(37));
+
+
+</script>
+
+tehtävä 2
+
+<script language="JavaScript">
+
+
+
+  nimi = prompt('Anna nimi:');
+
+  var picnumber = Math.floor((Math.random() * 4) + 1);
+
+  if (picnumber === 1){
+    document.write(nimi +'Olet Rohkelikko');
+  } else if (picnumber === 2) {
+    document.write(nimi + 'Olet Luihunen');
+  } else if (picnumber === 3) {
+    document.write( nimi + 'Olet Puuskupuh');
+  } else {
+    document.write(nimi +'Olet Korpikynsi');
+  }
+
+
+</script>
+
+tehtävä 3
+<script language="JavaScript">
+  const nimi = prompt('Oletko mies vai nainen');
+  const hemoglobiini = prompt("Anna hemoglobiini arvo");
+
+
+  if (nimi === 'mies' ){
+    if (hemoglobiini<134) {
+      document.write("hemoglobiini on alhainen")
+    }
+    }else {
+    hemoglobiini= document.write('Hemoglobiini on normaali')
+  }
+    if (nimi === 'mies') {
+    if (hemoglobiini>195) {
+      document.write("hemoglobiini on korkea");
+    }
+    } if (nimi === 'nainen') {
+      if (hemoglobiini<117) {
+        document.write("hemoglobiini on alhainen");
+      }else {
+        hemoglobiini= document.write('Hemoglobiini on normaali')
+      }
+  }  if (nimi === 'nainen'){
+    if (hemoglobiini>175) {
+      document.write("hemoglobiini on korkea");
+    }
+  }
+</script>
+
+tehtävä 4 
+
+<script language="JavaScript">
+
+
+  const raha = prompt('anna lompakossa oleva rahamäärä');
+  const bussi = prompt("Anna bussilipun hinta");
+
+
+  const tulo = (raha-bussi);
+
+  if (raha<bussi) {
+      document.write("Ei riitä rahaa lompakkoon "+ tulo )
+
+    }if (raha > bussi ){
+    document.write("Lompakkoon jää rahaa "+ tulo + ' euroa Hyvää matkaa')
+    }
+
+   
+
+
+</script>
+
+tehtävä 5
+
+<script language="JavaScript">
+
+
+  if (confirm('Lasketaanko neliöjuuri')) neliojuuri()
+  else eilasketa()
+
+  function neliojuuri()
+  {tulo=prompt('Anna neliöjuuri')}
+
+  function eilasketa()
+  {alert('Neliöjuurta ei lasketa')}
+
+  tulo= document.write(Math.sqrt(tulo).toFixed(2));
+</script>
+
+tehtävä 6
+<script language="JavaScript">
+
+  var x = prompt('Anna vuosiluku');
+  if (x % 4 == 0)
+  {
+    alert('Vuosi on karkausvuosi');
+  }
+  if (x % 400 == 100)
+  else
+  {
+    alert('Ei ole karkausvuosi')
+  }
+
+
+
+
+</script>
