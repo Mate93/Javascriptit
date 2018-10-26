@@ -15,17 +15,16 @@ Tehtävä 1
 </script>
 
 tehtävä 2           //Ei vielä TOIMI
-    if ('Lasketaanko neliöjuuri') neliojuuri();
+     const count = prompt('Anna kokonaisluku');
 
 
-    function neliojuuri()
-    {tulo=prompt('Anna neliöjuuri')}
+  document.write(Math.sqrt(count).toFixed(2));
 
+  let miinus =math.abs(count);
+  while (miinus < 0){
 
+    document.write("Loop stopped!");
+    document.write(Math.sqrt(miinus).toFixed(2));
+  }
 
-   if (tulo= document.write(Math.sqrt(tulo).toFixed(2)));
-
-
-      else if (tulo < 0) ;
-        prompt('Anna luku uudelleen');
 
