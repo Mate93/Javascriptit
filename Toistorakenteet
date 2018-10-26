@@ -14,7 +14,7 @@ Tehtävä 1
     document.write(kertoma);
 </script>
 
-tehtävä 2
+tehtävä 2           //Ei vielä TOIMI
     if ('Lasketaanko neliöjuuri') neliojuuri();
 
 
