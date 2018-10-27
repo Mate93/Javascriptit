@@ -36,4 +36,13 @@ tehtävä 2
             return true;
         }
     }
+    
+   Tehtävä 3
+   
+    let luku, i, luki;
+    luku = prompt('Anna yläraja parillisille luvuille.');
+    luki = prompt('Anna pieni luku');
+    for (i >= luki; i<=luku ; luku%4==0) {
+        document.write('luvut ovat' + i);
+    }
 
