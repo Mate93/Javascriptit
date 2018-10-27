@@ -38,7 +38,7 @@ tehtävä 2
     }
     
    Tehtävä 3
-   
+   // Ei toimi
     let luku, i, luki;
     luku = prompt('Anna yläraja parillisille luvuille.');
     luki = prompt('Anna pieni luku');
