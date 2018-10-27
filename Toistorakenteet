@@ -14,17 +14,26 @@ Tehtävä 1
     document.write(kertoma);
 </script>
 
-tehtävä 2           //Ei vielä TOIMI
-     const count = prompt('Anna kokonaisluku');
+tehtävä 2           
+   var luku;
+    kysyLuku();
 
+    function kysyLuku(){
+        
+        do{
+            luku = prompt('Anna positiivinen kokonaisluku ');
+            var a = testaaLuku(luku);
 
-  document.write(Math.sqrt(count).toFixed(2));
+        }while (a==false);
+        document.write('Luvun neliöjuuri on :' + Math.sqrt(luku));
+    }
 
-  let miinus =math.abs(count);
-  while (miinus < 0){
-
-    document.write("Loop stopped!");
-    document.write(Math.sqrt(miinus).toFixed(2));
-  }
-
+   
+    function testaaLuku(n){
+        if(luku<0){
+            return false;
+        }else{
+            return true;
+        }
+    }
 
