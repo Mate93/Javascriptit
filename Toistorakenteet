@@ -38,11 +38,14 @@ tehtävä 2
     }
     
    Tehtävä 3
-   // Ei toimi
-    let luku, i, luki;
-    luku = prompt('Anna yläraja parillisille luvuille.');
-    luki = prompt('Anna pieni luku');
-    for (i >= luki; i<=luku ; luku%4==0) {
-        document.write('luvut ovat' + i);
+   let i, j;
+    var x = prompt('Anna eka luku');
+    var toka = prompt('Anna toka luku');
+    for(i= x; i>=x; i++) {
+        for (j = toka; j <= toka; j++) {
+
+            (x % 4 == i++);
+            alert('Vuosi on karkausvuosi' + i++ + j);
+        }
     }
 
