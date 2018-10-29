@@ -38,14 +38,16 @@ tehtävä 2
     }
     
    Tehtävä 3
-   let i, j;
-    var x = prompt('Anna eka luku');
-    var toka = prompt('Anna toka luku');
-    for(i= x; i>=x; i++) {
-        for (j = toka; j <= toka; j++) {
+     let text = '';
 
-            (x % 4 == i++);
-            alert('Vuosi on karkausvuosi' + i++ + j);
-        }
+  const x = prompt('Anna aloitusvuosi');
+  const b = prompt('Anna lopetusvuosi');
+
+  for (let i = x; x <= b; i++) {
+    if ((0 === i % 4) && (0 !== i % 100) || (0 === i % 400)) {
+      text += '<li>' + i + '</li>';
     }
+
+  }
+  document.getElementById('html').innerHTML = text;
 
