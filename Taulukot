@@ -1,1 +1,30 @@
+teht1 
+<script>
+  let luku= [];
 
+  luku[1]= prompt('anna eka luku');
+  luku[2]=prompt('anna toinen luku');
+  luku[3]=prompt('anna kolmas luku');
+  luku[4]=prompt('anna neljäs luku');
+  luku[5]=prompt('anna viides luku');
+
+  luku.reverse();
+
+  document.write(luku);
+
+</script>
+
+teht 2
+<body>
+<ul id="html"></ul>
+<script>
+    maara= prompt('Anna osallistujen määrä');
+    let nimi= [];
+
+    nimi[1]= prompt('anna eka luku');
+    nimi[2]=prompt('anna toinen luku');
+    nimi[3]=prompt('anna kolmas luku');
+    nimi[4]=prompt('anna neljäs luku');
+    nimi[5]=prompt('anna viides luku');
+    document.getElementById('html').innerHTML = nimi;
+</script>
