@@ -113,18 +113,13 @@ tehtävä 5
 tehtävä 6
 <script language="JavaScript">
 
-  var x = prompt('Anna vuosiluku');
-  if (x % 4 == 0)
-  {
-    alert('Vuosi on karkausvuosi');
-  }
-  if (x % 400 == 100)
-  else
-  {
-    alert('Ei ole karkausvuosi')
-  }
+  const x = prompt('Anna vuosiluku');
+if ((0===x%4) && (0 !== x %100) || (0 === x%400)){
 
-
+  alert('vuosi on karkausvuosi');
+}else{
+  alert('vuosi ei ole karkausvuosi');
+}
 
 
 </script>
