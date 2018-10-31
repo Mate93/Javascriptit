@@ -33,3 +33,16 @@ document.write(c[2]+'<br/>');
 document.write(c[3]+'<br/>');
 document.write(c[4]+'<br/>');
 document.write(c[5]+'<br/>');
+
+teh4 Ei vielä toimi
+   nolla=0;
+        luvut=prompt('Anna luku ');
+        while (luvut>nolla)
+        {
+            if(luvut===nolla)
+                break;
+
+            }
+            document.write(luvut);
+
+
