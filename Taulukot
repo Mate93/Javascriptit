@@ -17,22 +17,35 @@ teht1
 
 teht 3 
 
-let c = [];
-c[0] = prompt('Anna ensimmäisen koiran nimi');
- c[1] = prompt('Anna toka nimi');
- c[2] = prompt('Anna kolmasnimi');
- c[3] = prompt('Anna neljäs nimi');
- c[4] = prompt('Anna viides nimi');
- c[5] = prompt('Anna kuudes nimi');
+ <ul>
+        <li>
 
 
+        </li>
+
+
+    </ul>
+</head>
+<body>
+<script>
+
+  let c = [];
+  c[0] = prompt('Anna ensimmäisen koiran nimi');
+  c[1] = prompt('Anna toka nimi');
+  c[2] = prompt('Anna kolmasnimi');
+  c[3] = prompt('Anna neljäs nimi');
+  c[4] = prompt('Anna viides nimi');
+  c[5] = prompt('Anna kuudes nimi');
+
+
+c.sort();
 c.reverse();
-document.write(c[0]+"<br/>");
-document.write(c[1]+'<br/>');
-document.write(c[2]+'<br/>');
-document.write(c[3]+'<br/>');
-document.write(c[4]+'<br/>');
-document.write(c[5]+'<br/>');
+  document.write(c[0]+"<br/>");
+  document.write(c[1]+'<br/>');
+  document.write(c[2]+'<br/>');
+  document.write(c[3]+'<br/>');
+  document.write(c[4]+'<br/>');
+  document.write(c[5]+'<br/>');
 
 teh4 Ei vielä toimi
    nolla=0;
