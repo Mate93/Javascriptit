@@ -15,11 +15,11 @@ teht1
 </script>
 
 
-teht 3 
+tehtävä 3 
 
  <ul>
         <li>
-
+<p id="html"></p>
 
         </li>
 
@@ -28,6 +28,7 @@ teht 3
 </head>
 <body>
 <script>
+ 'use strict';
 
   let c = [];
   c[0] = prompt('Anna ensimmäisen koiran nimi');
@@ -40,22 +41,29 @@ teht 3
 
 c.sort();
 c.reverse();
-  document.write(c[0]+"<br/>");
-  document.write(c[1]+'<br/>');
-  document.write(c[2]+'<br/>');
-  document.write(c[3]+'<br/>');
-  document.write(c[4]+'<br/>');
-  document.write(c[5]+'<br/>');
 
-teh4 Ei vielä toimi
-   nolla=0;
-        luvut=prompt('Anna luku ');
-        while (luvut>nolla)
-        {
-            if(luvut===nolla)
-                break;
 
-            }
-            document.write(luvut);
+
+  document.getElementById('html').innerHTML = c;
+
+tehtävä 4 
+   'use strict';
+
+  let silmukka = true;
+  const luvut = [];
+
+  while (silmukka) {
+    const luku = +prompt('Anna luku ');
+    console.log(luku);
+    if (luku === 0) {
+      console.log('testi');
+      silmukka = false;
+      break;
+    }
+    luvut.push(luku);
+  }
+  luvut.sort();
+  luvut.reverse();
+  document.write((luvut));
 
 
