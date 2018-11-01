@@ -61,9 +61,10 @@ tehtävä 4
       break;
     }
     luvut.push(luku);
-  }
-  luvut.sort();
+    luvut.sort();
   luvut.reverse();
+  }
+  
   document.write((luvut));
 
 
