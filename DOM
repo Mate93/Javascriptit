@@ -1,0 +1,42 @@
+var item = document.getElementsByTagName("td");
+item[0].innerHTML='Mate';
+var item = document.getElementsByTagName("td");
+item[1].innerHTML='Alhelo';
+var item = document.getElementsByTagName("td");
+item[2].innerHTML='Mate';
+var item = document.getElementsByTagName("td");
+item[3].innerHTML='Erkinkatu 15 , 00550 helsinki';
+
+
+var joku = document.createElement('th');
+document.body.appendChild(joku);
+
+joku.innerText='Puhelinnumero';
+
+var lisää = document.createElement('td');
+document.body.appendChild(lisää);
+lisää.innerText='0507657564';
+
+var poista = document.getElementById("td")[2];
+var poistoa = document.parentNode;
+poistoa.removeChild(poista);
+
+Tehtävä 2 Ei toimi
+const etsi = document.getElementById('img')[0];
+etsi.src ="http://placekitten.com/420/300";
+etsi.alt="kuva 1";
+
+const next = document.getElementById('img')[1];
+etsi.src ="http://placekitten.com/420/300";
+etsi.alt="kuva 1";
+
+Tai
+
+function funktio() {
+    var kuva = document.createElement("img");
+    kuva.setAttribute("src", "http://placekitten.com/420/300");
+    document.body.appendChild(kuva);
+
+}
+
+
