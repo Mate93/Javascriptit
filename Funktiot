@@ -1,1 +1,10 @@
 teht1
+  function muunnos(galloina) {
+    return tulos;
+  }
+
+  let luku1;
+  luku1 = prompt('Anna bensanmäärä galloina');
+  ns = (luku1*3.785);
+  document.write('se on' + ns + 'litraa' );
+
