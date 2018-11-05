@@ -21,22 +21,39 @@ var poista = document.getElementById("td")[2];
 var poistoa = document.parentNode;
 poistoa.removeChild(poista);
 
-Tehtävä 2 Ei toimi
-const etsi = document.getElementById('img')[0];
-etsi.src ="http://placekitten.com/420/300";
-etsi.alt="kuva 1";
+Tehtävä 2 
 
-const next = document.getElementById('img')[1];
-etsi.src ="http://placekitten.com/420/300";
-etsi.alt="kuva 1";
+document.querySelector('img').setAttribute('style', 'display:inline');
 
-Tai
+document.querySelector('img:last-of-type').setAttribute('class','show' );
 
-function funktio() {
-    var kuva = document.createElement("img");
-    kuva.setAttribute("src", "http://placekitten.com/420/300");
-    document.body.appendChild(kuva);
 
-}
+teht3
+
+const kuvat = [
+  'http://placekitten.com/321/240',
+  'http://placekitten.com/320/241',
+  'http://placekitten.com/322/242',
+  'http://placekitten.com/321/240',
+  'http://placekitten.com/331/240',
+];
+
+
+const lista = document.querySelector('ul');
+
+for (let i = 1; i <  + 1; i++){
+  const elementti = document.createElement('li');
+  const kuva = document.createElement('img');
+
+  kuva.scr='http://placekitten.com/321/240'[0];
+  kuvat.scr='http://placekitten.com/320/241'[1];
+  kuva.scr='http://placekitten.com/322/242'[2];
+  kuvat.scr='http://placekitten.com/321/240'[3];
+  kuva.scr='http://placekitten.com/331/240'[4];
+
+  elementti.appendChild(img);
+  lista.appendChild(elementti);
+
+  }
 
 
