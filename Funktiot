@@ -8,3 +8,23 @@ teht1
   ns = (luku1*3.785);
   document.write('se on' + ns + 'litraa' );
 
+teht 2
+let x;
+x= prompt('Anna galloonan määrä');
+    function muunnos(galloona=3.785) {
+
+        return (3.785*galloona);
+
+    }
+
+document.write(muunnos(x));
+
+teht 3
+
+let a= prompt('Anna arvo');
+
+    function itseisarvo(arvo) {
+        return Math.abs(a);
+    }
+
+    document.write(itseisarvo(a));
