@@ -1,14 +1,17 @@
 teht1
+'use strict';
+
   function muunnos(galloina) {
     return tulos;
   }
 
   let luku1;
   luku1 = prompt('Anna bensanmäärä galloina');
-  ns = (luku1*3.785);
+  const ns = (luku1*3.785);
   document.write('se on' + ns + 'litraa' );
 
 teht 2
+'use strict';
 let x;
 x= prompt('Anna galloonan määrä');
     function muunnos(galloona=3.785) {
@@ -20,7 +23,7 @@ x= prompt('Anna galloonan määrä');
 document.write(muunnos(x));
 
 teht 3
-
+'use strict';
 let a= prompt('Anna arvo');
 
     function itseisarvo(arvo) {
@@ -28,3 +31,31 @@ let a= prompt('Anna arvo');
     }
 
     document.write(itseisarvo(a));
+teht 4
+ 'use strict';
+
+  const eka = prompt('Anna eka luku');
+  const toka = prompt('Anna eka luku');
+  const kolmas = prompt('Anna eka luku');
+
+  function summa(luku1, luku2, luku3) {
+
+    return Math.max(luku1, luku2, luku3);
+  }
+
+  document.write(summa(eka, toka, kolmas));
+  
+  teht 6
+  
+      'use strict';
+  function vastaluvuksi(num)
+  {
+    return -Math.abs(num);
+  }
+
+  document.write(vastaluvuksi(20));
+  document.write(vastaluvuksi(25));
+  document.write(vastaluvuksi(32));
+  document.write(vastaluvuksi(8));
+
+  
