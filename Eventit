@@ -1,0 +1,41 @@
+Teht 1
+
+<body>
+    <button id="nappi">Klikkaa mua</button>
+    <script src="js/teht1.js"></script>
+</body>
+//Scripti
+const nappi = document.querySelector('button');
+nappi.addEventListener('click', function(evt){
+  alert('Nappia klikattu');
+});
+
+Teht 2
+
+    <script src="js/teht2.js"></script>
+    <link rel="stylesheet" type="text/css" href="teht2.css"> 
+    
+    //Script
+    
+  const img = document.querySelector('img');
+
+  img.onmouseover = showMouseOver;
+  img.onmouseout = showMouseOut;
+
+
+function showMouseOver()
+{
+  let p = document.getElementById("notice");
+  p.innerHTML = 'mouse over detected';
+}
+
+function showMouseOut()
+{
+  let p = document.getElementById("notice");
+  p.innerHTML = 'mouse out detected';
+}
+
+
+    
+    
+    
