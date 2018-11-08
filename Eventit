@@ -17,22 +17,32 @@ Teht 2
     
     //Script
     
-  const img = document.querySelector('img');
+ 'use strict';
 
-  img.onmouseover = showMouseOver;
-  img.onmouseout = showMouseOut;
+
+
+const img = document.querySelector('p');
+
+p.onmouseenter = showMouseOver;
+p.onmouseleave = showMouseOut;
 
 
 function showMouseOver()
 {
-  let p = document.getElementById("notice");
-  p.innerHTML = 'mouse over detected';
+    let p = document.getElementById("p");
+    const text = document.querySelector('p').style.background = "white";
 }
 
 function showMouseOut()
 {
-  let p = document.getElementById("notice");
-  p.innerHTML = 'mouse out detected';
+    let p = document.getElementById("p");
+    const teksti = document.querySelector('p').style.background = "white";
+}
+
+css
+p{
+
+    visibility: hidden;
 }
 
 
