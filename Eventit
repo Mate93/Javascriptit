@@ -12,38 +12,90 @@ nappi.addEventListener('click', function(evt){
 
 Teht 2
 
+<img src="http://placekitten.com/491/391" alt="kissa" id="kuva">
+    <p style="display: none;">Tämä teksti näkyy, kun hiiri on kuvan päällä.</p>
     <script src="js/teht2.js"></script>
-    <link rel="stylesheet" type="text/css" href="teht2.css"> 
     
     //Script
     
  'use strict';
 
 
+document.getElementById('kuva').onmouseover = function() {
+  mouseOver();
+};
 
-const img = document.querySelector('p');
-
-p.onmouseenter = showMouseOver;
-p.onmouseleave = showMouseOut;
-
-
-function showMouseOver()
-{
-    let p = document.getElementById("p");
-    const text = document.querySelector('p').style.background = "white";
+function mouseOver() {
+  document.querySelector('p').style = 'display: block';
 }
 
-function showMouseOut()
-{
-    let p = document.getElementById("p");
-    const teksti = document.querySelector('p').style.background = "white";
+document.getElementById('kuva').onmouseout = function() {
+  mouseOut();
+};
+
+function mouseOut() {
+  document.querySelector('p').style = 'display: none';
 }
 
-css
-p{
+Teht 3
+    <button id="kerto">Kertolasku</button>
+    <button id="jako">Jakolasku</button>
+    <button id="yhteen">Yhteenlasku</button>
+    <button id="vähennys">Vähennyslasku</button>
 
-    visibility: hidden;
+
+    <input type="number" name="numero1" id="num1">
+    <br>
+    <input type="number" name="numero2" id="num2">
+    <br>
+
+    <p id="vastaus"></p>
+    <script src="js/teht3.js"></script>
+
+//SCRIPT
+'Use strict';
+
+
+
+
+function getNmbr1() {
+  return document.getElementById('num1').value;
 }
+
+function getNmbr2() {
+  return document.getElementById('num2').value;
+}
+
+function sumClick() {
+  let nro1 = Number(getNmbr1());
+  let nro2 = Number(getNmbr2());
+  document.getElementById('vastaus').innerHTML = nro1 + nro2;
+}
+
+function subClick() {
+  let nro1 = Number(getNmbr1());
+  let nro2 = Number(getNmbr2());
+  document.getElementById('vastaus').innerHTML = nro1 - nro2;
+}
+
+function multiClick() {
+  let nro1 = Number(getNmbr1());
+  let nro2 = Number(getNmbr2());
+  document.getElementById('vastaus').innerHTML = nro1 * nro2;
+}
+
+function divClick() {
+  let nro1 = Number(getNmbr1());
+  let nro2 = Number(getNmbr2());
+  document.getElementById('vastaus').innerHTML = nro1 / nro2;
+}
+
+document.getElementById('kerto').addEventListener('click', multiClick);
+document.getElementById('jako').addEventListener('click', divClick);
+
+
+document.getElementById('yhteen').addEventListener('click', sumClick);
+document.getElementById('vähennys').addEventListener('click', subClick);
 
 
     
