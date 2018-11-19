@@ -58,14 +58,18 @@ for (let i = 1; i <  + 1; i++){
 
 
 //html
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>TV</title>
+    <title>Ajax</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="tehtava.css">
 </head>
 <body>
+
 <header>
-    <h1>TV</h1>
+    <h1>TV-sarjat</h1>
     <div id="inputBox">
         <h2>Hakukenttä</h2>
         <input id="hakuteksti" type="text">
@@ -76,27 +80,51 @@ for (let i = 1; i <  + 1; i++){
 
 </main>
 
+<script src="tehtava.js"></script>
 
 
-<script src="js.js"></script>
 
-//Style 
-body {
-    background-color:#999966;
+</body>
+</html>
 
+//script
+document.getElementById('hakunappi').addEventListener('click', search, false);
+
+function search() {
+  let userInput = document.getElementById('hakuteksti').value;
+  fetch('http://api.tvmaze.com/search/shows?q=' + userInput).
+      then(response => response.json()).
+      then(shows => {
+        const sarjat = document.getElementById('Tv');
+        sarjat.innerHTML = shows.map(({show}) => `
+<div class="uudet">
+ ${show.image ? `<img src="${show.image.medium}">` : ''}
+<div>
+<h3>${show.name}</h3>
+<span><a href="${show.officialSite}">Etusivu</a></span>
+<br />
+<span>Summary: ${show.summary}</span>
+</div>
+</div>
+`).join('');
+      }).
+      catch(error => {
+        console.log(error);
+      });
+  return;
 }
 
-
-#inputBox {
-    background-color: white;
-    border-radius: 15px 50px;
+//css
+img {
     border-style: solid;
     border-color: black;
-    border-width: 4px;
-    width: 80%;
-    margin: 100px;
-
+    margin-right: 20px;
+    margin-bottom: auto;
+    float:left;
 }
+
+
+
 
 h2, button, input, h1 {
     margin: 100px;
@@ -105,16 +133,6 @@ h2, button, input, h1 {
 }
 
 
-input, button, h2 {
-    border-width: 2px;
-    padding: 6px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-}
-
-input, button {
-    margin-left: 25%;
-}
 
 main {
     width:100%;
@@ -130,45 +148,25 @@ main {
     flex-direction: row;
 }
 
-.uudet {
-    padding: 12px;
-    max-width:860px;
-    margin:auto;
-    margin-top: 30px;
-
+input, button, h2 {
+    border-width: 2px;
+    padding: 6px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
-img {
+
+#inputBox {
+    background-color: white;
+    border-radius: 15px 50px;
     border-style: solid;
     border-color: black;
-    margin-right: 20px;
-    margin-bottom: auto;
-    float:left;
+    border-width: 4px;
+    width: 80%;
+    margin: 100px;
+
 }
+body {
+    background:url("2560x1920-228492804-navy-blue-background.jpg");
 
-//js 
-document.getElementById('hakunappi').addEventListener('click', search, false);
-
-function search() {
-  let userInput = document.getElementById('hakuteksti').value;
-  fetch('http://api.tvmaze.com/search/shows?q=' + userInput).
-      then(response => response.json()).
-      then(shows => {
-        const sarjat = document.getElementById('Tv');
-        sarjat.innerHTML = shows.map(({show}) => `
-          <div class="uudet">
-            ${show.image ? `<img src="${show.image.medium}">` : ''}
-            <div>
-              <h3>${show.name}</h3>
-              <span><a href="${show.officialSite}">Etusivu</a></span>
-              <br />
-              <span>Summary: ${show.summary}</span>
-            </div>
-          </div>
-        `).join('');
-      }).
-      catch(error => {
-        console.log(error);
-      });
-  return;
 }
